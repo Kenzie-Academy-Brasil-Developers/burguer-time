@@ -61,6 +61,7 @@ export const UserProvider = ({ children }: IUserProviderProps) => {
         navigate("/shop");
       } catch (error) {
         console.log(error);
+        toast.error("Oops! Algo deu errado tente novamente");
         localStorage.getItem("@user:id");
         localStorage.getItem("@user:token");
       }
@@ -83,6 +84,7 @@ export const UserProvider = ({ children }: IUserProviderProps) => {
       navigate("/shop");
     } catch (error) {
       console.log(error);
+      toast.error("Oops! Algo deu errado tente novamente");
     } finally {
       setLoading(false);
     }

@@ -25,24 +25,28 @@ const RegisterForm = () => {
     <StyledForm onSubmit={handleSubmit(submit)}>
       <Input
         id="name"
+        label="Nome"
         disabled={loading}
         {...register("name")}
         error={errors.name}
       />
       <Input
         id="email"
+        label="Email"
         disabled={loading}
         {...register("email")}
         error={errors.email}
       />
       <Input
         id="password"
+        label="Senha"
         disabled={loading}
         {...register("password")}
         error={errors.password}
       />
       <Input
         id="confirmPassword"
+        label="Confirmar Senha"
         disabled={loading}
         {...register("confirm")}
         error={errors.confirm}

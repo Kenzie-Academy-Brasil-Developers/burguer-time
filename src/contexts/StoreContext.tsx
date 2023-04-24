@@ -1,4 +1,5 @@
 import { createContext, useEffect, useState, useContext } from "react";
+import { toast } from "react-toastify";
 import { api } from "../services/api";
 
 interface IStoreProviderProps {
@@ -41,6 +42,7 @@ export const StoreProvider = ({ children }: IStoreProviderProps) => {
         setStoreList(data);
       } catch (error) {
         console.log(error);
+        toast.error("Oops! Algo deu errado tente novamente");
       }
     };
     StoreLoad();

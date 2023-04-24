@@ -26,13 +26,14 @@ const LoginForm = () => {
         id="login"
         type="email"
         disabled={loading}
+        label={"Email"}
         {...register("email")}
       />
       {errors ? <span>{errors.email?.message}</span> : null}
       <Input
         id="senha"
         type="password"
-        disabled={loading}
+        label="Senha"
         {...register("password")}
       />
       {errors ? <span>{errors.password?.message}</span> : null}
