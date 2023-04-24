@@ -1,9 +1,15 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  span {
+    font-family: ${({ theme }) => theme.fonts.primary};
+    font-size: 0.85rem;
+    color: ${({ theme }) => theme.colors.feedback.negative};
+  }
 `;
 
 export const StyledInputContainer = styled.div`

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const StyledHeader = styled.header`
   background: ${({ theme }) => theme.colors.gray0};
@@ -30,6 +30,22 @@ export const StyledHeader = styled.header`
 
           :hover {
             color: ${({ theme }) => theme.colors.gray300};
+          }
+        }
+      }
+      .buttonsNoEmpty {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+        button {
+          background: transparent;
+          color: ${({ theme }) => theme.colors.primary};
+          transition: 0.3s;
+
+          :hover {
+            color: ${({ theme }) => theme.colors.primaryFocus};
           }
         }
       }
