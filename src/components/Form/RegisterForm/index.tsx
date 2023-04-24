@@ -39,6 +39,7 @@ const RegisterForm = () => {
       />
       <Input
         id="password"
+        type="password"
         label="Senha"
         disabled={loading}
         {...register("password")}
@@ -46,6 +47,7 @@ const RegisterForm = () => {
       />
       <Input
         id="confirmPassword"
+        type="password"
         label="Confirmar Senha"
         disabled={loading}
         {...register("confirm")}
